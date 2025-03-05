@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Noughts and crosses Game</title>
+  </head>
+  <body>
+    <main>
+      <div class="guidline">
+        <h2>Noughts and Crosses (Tic-Tac-Toe) Game Instructions</h2>
+
+        <h3>Objective</h3>
+        The goal of the game is to get three of your marks (either "X" or "O")
+        in a row, column, or diagonal before your opponent does.
+        <h3>Setup</h3>
+        The game is played on a 3x3 grid. One player is "X" and the other is
+        "O". Players take turns placing their mark in an empty square.
+
+        <h3>How to Play</h3>
+        Decide who goes first (usually "X" starts). Players take turns placing
+        their mark ("X" or "O") in any empty square. Winning the game: The first
+        player to get three marks in a row (horizontally, vertically, or
+        diagonally) wins. If all squares are filled and no player has won, the
+        game is a draw.
+        <br />
+        <h3>Winning Conditions</h3>
+        A player wins if they get three of their marks in a row in any of these
+        patterns: ✅ Horizontally (e.g., top row: X X X) ✅ Vertically (e.g.,
+        middle column: O O O) ✅ Diagonally (e.g., top-left to bottom-right: X O
+        X)
+        <br />
+        <h3>Game Over Scenarios</h3>
+
+        Win: One player gets three marks in a row. Draw: All squares are filled,
+        but no player has three in a row.
+      </div>
+      <div class="gameBox">
+        <div class="msg-container hide">
+          <p id="msg"></p>
+          <button id="new-btn">Start New Game</button>
+        </div>
+        <h1 class="heading">Noughts and crosses Game</h1>
+        <div class="container">
+          <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+          </div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
